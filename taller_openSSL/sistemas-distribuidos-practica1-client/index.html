@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog de turistico de comidas rapidas en Pasto">
+    <meta name="googlebot" content="noindex, nofollow"> 
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <!-- Artículo destacado -->
+      <article class="post">
+        <section>
+            <h2>Protocolo Http</h2>
+            <button id="btnFetch">Obtener Usuarios Protocolo HTTPS</button>
+            <form id="myForm">
+              <input type="text" id="nombre" placeholder="Nombre">
+              <input type="email" id="email" placeholder="Email">
+              
+              <button type="submit">Enviar</button>
+            </form>
+            
+            <div id="response"></div>
+          </section>
+          
+          <section>
+            <h2>Protocolo Websocket</h2>
+      
+            <button id="btnWebSocket">Comunicacion Web Socket</button>
+            <button id="btnWebSocket2">Comunicacion Web Socket Hora local</button>
+            <div id="messages" style="border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: auto;"></div>
+
+          
+      </article>
+
+      <!-- Barra lateral (contenido relacionado) -->
+      <aside class="sidebar">
+          <h4>Articulos</h4>
+          <ul>
+              <li><a href="https://aws.amazon.com/es/what-is/distributed-computing/">Qué es la computación distribuida?</a></li>
+          </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p>© 2025 Sistemas Distribuidos.</p>
+      <address>Contacto: <a href="mailto:andres.duartee@campusucc.edu.co">andres.duartee@campusucc.edu.co</a></address>
+    </footer>
+
+    <script src="./src/scripts/geolocalizacion.js" defer></script>
+    <script src="./src/scripts/fetchData.js" defer></script>
+    <script src="./src/scripts/serverws.js" defer></script>
+    <script src="./src/scripts/http.js" defer></script>
+  </body>
+</html>
